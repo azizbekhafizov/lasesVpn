@@ -624,7 +624,8 @@ header{
 }
 
 .footer-column {
-    margin: 100px 0;
+  margin-top: 100px;
+  margin-left: 150p;
     flex: 1;
     min-width: 200px;
 }
@@ -656,6 +657,11 @@ header{
     margin-top: 15px;
 }
 
+.social-icons a{
+  color: #F53838;
+  font-size: 20px;
+}
+
 .social-icons a {
     width: 30px;
     height: 30px;
@@ -677,3 +683,43 @@ header{
     margin-top: 20px;
     color: #aaa;
 } 
+
+
+
+
+.map {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+.map img {
+  width: 100%;
+  display: block;
+}
+
+.location {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: rgba(255, 0, 0, 0.5);
+  border-radius: 50%;
+  animation: pulse 1.5s infinite;
+  transform: translate(-50%, -50%);
+}
+
+@keyframes pulse {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.5);
+    opacity: 0.5;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1;
+  }
+}
