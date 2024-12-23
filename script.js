@@ -1,6 +1,6 @@
-window.addEventListener('load', function() {
-    setTimeout(function() {
+// window.addEventListener('load', function() {
+//     setTimeout(function() {
 
-        document.getElementById('loading-screen').style.display = 'none';
-    }, 3000); 
-});
+//         document.getElementById('loading-screen').style.display = 'none';
+//     }, 3000); 
+// });
