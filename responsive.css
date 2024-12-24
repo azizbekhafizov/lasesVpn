@@ -1,0 +1,246 @@
+/* responsive.css */
+
+/* Ekran kengligi 1200px dan kichik bo'lsa */
+@media (max-width: 1200px) {
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .header-l h1 {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .header-l p {
+    font-size: 14px;
+    line-height: 25px;
+  }
+
+  .header-l button {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+
+  .card {
+    width: 300px;
+    height: auto;
+    padding: 15px;
+  }
+
+  .provide {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+}
+
+/* Ekran kengligi 992px dan kichik bo'lsa */
+@media (max-width: 992px) {
+  .navbar {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .auth-buttons {
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-l h1 {
+    width: 90%;
+    font-size: 35px;
+    line-height: 50px;
+  }
+
+  .header-l p {
+    width: 90%;
+  }
+
+  .header-card {
+    flex-direction: column;
+    height: auto;
+    gap: 20px;
+  }
+
+  .pricing-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .testimonials-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .subscribe-section {
+    padding: 30px 20px;
+  }
+}
+
+/* Ekran kengligi 768px dan kichik bo'lsa */
+@media (max-width: 768px) {
+  .header-l h1 {
+    font-size: 30px;
+    line-height: 45px;
+  }
+  .header-card {
+    height: 500px;
+    padding: 0;
+  }
+
+  .header-l button {
+    padding: 10px 25px;
+    font-size: 14px;
+  }
+  .box:not(:last-child)::after {
+    content: "";
+    display: none;
+  }
+  .provide-r h1,
+  .provide-r p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .check {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .testimonial-card {
+    width: 90%;
+    margin: auto;
+  }
+
+  .global-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-column {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .footer-column h3 {
+    justify-content: center;
+  }
+
+  .social-icons {
+    justify-content: center;
+  }
+
+  .footer small {
+    text-align: center;
+    margin-top: 10px;
+  }
+}
+
+/* Ekran kengligi 576px dan kichik bo'lsa */
+@media (max-width: 576px) {
+  .navbar {
+    display: block;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .auth-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  header {
+    margin-top: -8000px;
+  }
+
+  header img {
+    width: 410px;
+    height: 280px;
+  }
+
+  .header-l h1 {
+    width: 400px;
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .header-l h1 span {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .header-card {
+    padding: 10px;
+  }
+
+  .card {
+    width: 100%;
+    height: auto;
+  }
+
+  .footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin: 20px 0;
+  }
+}
+
+/* General Mobile Adjustments */
+@media screen and (max-width: 480px) {
+  .logo-text {
+    font-size: 18px;
+  }
+
+  .nav-links a {
+    font-size: 14px;
+  }
+
+  .auth-buttons .sign-in {
+    font-size: 14px;
+  }
+
+  .auth-buttons .sign-up {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  footer {
+    margin: auto;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .subscribe-section {
+    /* padding: -30px 20px; */
+  }
+  .subscribe-section h1 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .subscribe-btn {
+    font-size: 1rem;
+    width: 120px;
+    height: 60px;
+  }
+}
