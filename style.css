@@ -172,10 +172,29 @@ header img {
   font-weight: 500;
 }
 
+
+@media (max-width:768px){
+  .header-l h1 {
+    margin: auto;
+    font-size: 30px;
+    line-height: 40px;
+    width: 350px;
+  }
+
+}
+
+
 .header-l h1 span {
   font-size: 50px;
   line-height: 70px;
   font-weight: 700;
+}
+
+@media (max-width:768px) {
+  .header-l h1 span {
+    margin: auto;
+    font-size: 30px;
+  }
 }
 
 .header-l p {
@@ -185,6 +204,15 @@ header img {
   line-height: 30px;
   font-weight: 400;
 }
+
+@media (max-width:768px){
+  .header-l p{
+    width: 300px;
+    margin: auto;
+  }
+}
+
+
 .header-l p span {
   font-size: 16px;
   line-height: 30px;
@@ -264,12 +292,37 @@ header img {
   align-items: center;
 }
 
+.provide img{
+  width: 500px;
+  height: 415px;
+}
+
+@media (max-width: 768px) {
+
+ .provide img {
+  width: 300px;
+  height: 265px;
+ }
+}
+
 .provide-r h1 {
   font-size: 40px;
   font-weight: 500;
   line-height: 50px;
   width: 420px;
 }
+
+@media (max-width: 768px) {
+
+  .provide-r h1 {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 35px;
+    margin: auto;
+    width: 380px;
+  }
+ }
+ 
 
 .provide-r p {
   margin-top: 15px;
@@ -279,12 +332,36 @@ header img {
   width: 467px;
 }
 
+@media (max-width: 768px) {
+
+  .provide-r p {
+    margin: auto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    width: 360px;
+  }
+ }
+
 .provide .check {
   margin-top: 25px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   width: 300px;
+}
+
+@media (max-width:768px) {
+  .provide .check {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 300px;
+    width: 100%;
+    margin: auto;
+  }
+  
 }
 
 .check span {
@@ -320,6 +397,16 @@ header img {
   margin: auto;
 }
 
+@media  (max-width: 768px) {
+  .choose-top p {
+    text-align: center;
+    width: 300px;
+    font-size: 16px;
+    line-height: 30px;
+    margin: auto;
+  }
+}
+
 .pricing-container {
   display: flex;
   justify-content: center;
@@ -327,7 +414,7 @@ header img {
   gap: 50px;
 }
 
-.card {
+.pricing-container .card {
   width: 400px;
   height: 680px;
   background-color: #fff;
@@ -341,6 +428,13 @@ header img {
   text-align: center;
   position: relative;
   transition: 0.8s;
+}
+
+@media (max-width: 768px) {
+  .pricing-container .card{
+    width: 350px;
+
+  }
 }
 
 .card:hover {
@@ -444,6 +538,21 @@ header img {
   font-weight: 400;
 }
 
+@media (max-width: 768px) {
+  .global-top h1 {
+    font-size: 25px;
+  width: 320px;
+  }
+  .global-top p {
+    margin: 25px auto;
+    text-align: center;
+    width: 350px;
+    font-size: 16px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+
 .global-top p span {
   font-weight: 500;
 }
@@ -473,6 +582,20 @@ header img {
   line-height: 50px;
 }
 
+@media (max-width: 768px) {
+  .testimonials-section h2 {
+    font-size: 25px;
+    width: 300px;
+    font-weight: 500;
+    margin: auto;
+    line-height: 30px;
+  }
+
+
+}
+
+
+
 .testimonials-section .paragrf {
   font-size: 16px;
   width: 555px;
@@ -482,14 +605,13 @@ header img {
   font-weight: 400;
   margin: 25px auto;
 }
-.testimonials-section .p {
-  font-size: 16px;
-  width: 340px;
-  color: #4f5665;
-  margin-bottom: 40px;
-  line-height: 30px;
-  font-weight: 400;
-  margin: 25px auto;
+
+@media (max-width: 768px) {
+  .testimonials-section .paragrf {
+    width: 300px;
+  }
+
+
 }
 
 .testimonials-container {
@@ -502,7 +624,7 @@ header img {
 
 .testimonial-card {
   background-color: #fff;
-  border: 1px solid #ddd;
+  border: 2px solid #ddd;
   border-radius: 10px;
   width: 400px;
   height: 230px;
@@ -510,10 +632,21 @@ header img {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
   text-align: left;
+  transition: 0.8s;
+}
+
+@media (max-width: 768px) {
+  .testimonial-card {
+  max-width: 350px;
+width: 100%;
+margin: auto;
+  }
 }
 
 .testimonial-card:hover {
   border: 2px solid #ff4d4d;
+  transform: scale(1.05);
+
 }
 
 .testimonial-header {
@@ -563,9 +696,9 @@ header img {
 }
 
 .testimonial-text {
-  font-size: 1em;
+  font-size: 1rem;
   color: #555;
-  margin-top: 10px;
+  padding: 10px;
 }
 
 .subscribe-section {
@@ -588,11 +721,15 @@ header img {
   margin-bottom: 10px;
 }
 
+
+
 .subscribe-section p {
   font-size: 1rem;
   color: #666;
   margin-bottom: 20px;
 }
+
+
 
 .subscribe-section .subscribe-btn {
   padding: 15px 30px;
@@ -603,6 +740,15 @@ header img {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+@media (max-width: 768px) {
+  .subscribe-section h1 {
+    font-size: 25px;
+    color: #222;
+  }
+
+
 }
 
 .subscribe-section .subscribe-btn:hover {
