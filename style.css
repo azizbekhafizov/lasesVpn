@@ -6,10 +6,7 @@
   box-sizing: border-box;
   font-family: "Rubik";
 }
-html{
-  width: 100%;
-  overflow: hidden;
-}
+
 
 .container {
   max-width: 1400px;
