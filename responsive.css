@@ -6,19 +6,40 @@
     padding: 0 20px;
   }
 
-  .header-l h1 {
-    font-size: 40px;
-    line-height: 60px;
+  header .header-l h1 {
+    font-size: 30px;
+    line-height: 40px;
+    width: 350px;
+  }
+  header .header-l h1 span  {
+    font-size: 30px;
+    line-height: 50px;
   }
 
-  .header-l p {
+  header .header-l p {
     font-size: 14px;
     line-height: 25px;
+    width: 400px;
   }
 
-  .header-l button {
+  header .header-l button {
     padding: 10px 30px;
     font-size: 16px;
+  }
+
+  header .header-r img{
+    margin-top: 25px;
+    width: 380px;
+    height: 250px;
+  }
+
+  .header-card{
+    max-width: 990px;
+    width: 100%;
+  }
+
+  .box:not(:last-child)::after {
+    display: none;
   }
 
   .card {
@@ -30,6 +51,11 @@
   .provide {
     flex-wrap: wrap;
     gap: 20px;
+  }
+
+  .global-bottom{
+    flex-wrap: wrap;
+    width: ;
   }
 
 
@@ -57,6 +83,16 @@
     font-size: 35px;
     line-height: 50px;
   }
+.provide .provide-r h1{
+  text-align: center;
+}
+.provide .provide-r p{
+  text-align: center;
+}
+
+.provide .check{
+  margin-left: 120px;
+}
 
   .header-card {
     flex-direction: column;
@@ -71,7 +107,7 @@
   }
 
   .testimonials-container {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 20px;
   }
 
@@ -222,6 +258,29 @@
 /* General Mobile Adjustments */
 @media screen and (max-width: 480px) {
 
+  .container{
+    max-width: 370px;
+    width: 100%;
+    margin: auto;
+  }
+
+  header .header-l p {
+    font-size: 14px;
+    line-height: 25px;
+    width: 300px;
+  }
+
+  header .header-r img{
+    margin-top: 25px;
+    width: 300px;
+    height: 200px;
+  }
+
+  .header-card{
+    max-width: 350px;
+    width: 100%;
+    margin: auto;
+  }
   .logo-text {
     font-size: 18px;
   }
