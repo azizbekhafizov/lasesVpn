@@ -1,9 +1,4 @@
-window.addEventListener('load', function() {
-    setTimeout(function() {
 
-        document.getElementById('loading-screen').style.display = 'none';
-    }, 3000); 
-});
 
 let body = document.body
 function changeMode() {
@@ -15,4 +10,18 @@ function changeMode() {
     }
 }
 
-  
+ 
+
+function modalFn() {
+    document.querySelector('.modal').style.display = "flex";
+}
+
+function closeModal(event) {
+    let modal = document.querySelector('.modal');
+
+    if (!event || event.target.classList.contains("modal")) {
+        modal.style.display = "none";
+    }
+}
+
+
